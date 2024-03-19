@@ -1,0 +1,226 @@
+<html>
+<head>
+	<title>My Book</title>
+</head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+<body bgcolor="orange">
+    <p>
+    	<center>
+    	<ul style="list-style-type: none;  padding: 0;">
+        <li style="display: inline;  margin-right: 10px"><a href="./home.html" 
+
+        	style="padding: 10px;color: white;background-color: hotpink;text-decoration: none;margin-right: 15px;">HOME</a></li>
+        <li style="display: inline;  margin-right: 10px"><a href="./about.html" 
+
+        	style="padding: 10px;color: white;background-color: hotpink;text-decoration: none;margin-right: 15px;">ABOUT</a></li>
+        <li style="display: inline;  margin-right: 10px"><a href="./contact.html" 
+        	style="padding: 10px;color: white;background-color: hotpink;text-decoration: none;margin-right: 15px;">CONTACT</a></li>
+        <li style="display: inline;  margin-right: 10px"><a href="./services.html" 
+        	style="padding: 10px;color: white;background-color: hotpink;text-decoration: none;margin-right: 15px;">SERVICES</a></li>
+        <li style="display: inline;  margin-right: 10px"><a href="./form.html" 
+        	style="padding: 10px;color: white;background-color: hotpink;text-decoration: none;margin-right: 15px;">FORM</a></li>
+        
+        <li style="display: inline;  margin-right: 10px"><a href="./table.html" 
+            style="padding: 10px;color: white;background-color: hotpink;text-decoration: none;margin-right: 15px;">TABLE</a></li>
+        
+        <li style="display: inline;  margin-right: 10px"><a href="./book.html" 
+        	style="padding: 10px;color: white;background-color: hotpink;text-decoration: none;margin-right: 15px;">MYBOOK</a></li>
+    </ul></center>
+
+	</p>
+	<h1>DATABASE AND JAVA WITH STOCK MANAGEMENT SYSTEM</h1>
+	<ol><h2><u><li>DATABASE</li></u></h2>
+		<p>Database name used: <b>system_management_system.</b></p>
+		<ul type="square"><h3><u><i><li>Tables</li></i></u></h3>
+
+			<ol><li><b>Admin Table</b></li>
+
+			<p>Admin table database structure This is table is table that will be only created by admin and will hold other system users apart from admin  will give them email and password that they will use to login and access the project or system, and also t used to register if she/he’s don’t have an account so once you must to create account in order to login and access or use the system.
+            Note: the created Admin will not have same ability and right in the system.</p></br>
+
+			<li><b>Product Table</b></li>
+
+			<p>Product Table database structure This table stores information about each product in the inventory such as product ID, name, product description, price, quantity on hand, etc. It serves as a central repository for all product-related data.</p> </br>
+
+
+			<li><b>Supplier Table</b></li>
+
+			<p>Supplier Table database structure This table Stores details or information about the suppliers providing the products, including supplier ID, name, contact information, etc. This table helps in managing relationships with suppliers and tracking supplier performance.</p></br>
+
+			<li><b>Stock Transaction Table</b></li>
+
+			<p>Stock_Transaction Table database structure This table Tracks all transactions related to inventory management, including sales, purchases, transfers between locations, adjustments, etc. It includes fields like transaction ID, type, date, product ID, quantity, and involved parties (if applicable).</p></br>
+
+            <li><b>Customer Table</b></li>
+
+			<p>Customers Table database structure This table Stores information about customers who purchase products, including customer ID, name, contact details, etc. This table facilitates managing customer relationships and analyzing customer behavior.</p></br>
+
+			<li><b>Orders Table</b></li></ol>
+
+			<p>Orders Table database structure This table Stores details about customers orders placed by the company or         organization to customers or may customers can provide orders for what he/she wants to purchase, including order ID, customer ID, order date, total amount, order status etc.It helps in tracking and managing the procurement process. </p></br>
+
+
+			              <h3><u><i><li>Attributes</li></i></u></h3>
+			       <ol type="a"><li><b>Attributes of Admin Table</b></li></br>
+    Here are the descriptions or purposes of the attributes/columns used in Admin table:</br>
+
+    <ol type="i"><li><p><b><i>fname, lname:</i></b> The columns which are represents first name and last name of user.</br></p></li> 
+
+    <li><p><b><i>phone:</i></b> The column which are represents telephone number of user.</br></p></li>
+
+    <li><p><b><i>gender:</i></b> The column which are represents or store gender of user like female and male.</br></p></li>
+
+    <li><p><b><i>martial_status:</i></b> The column which are represents  martial status of user like single,married,divorced,…..</br></p></li> 
+
+    <li><p><b><i>DoB:</i></b> The column which are represents Date of Birth of user.</br></p></li>
+
+   <li><p><b><i>Email:</i></b> The column which are represents Email of given user.</br></p></li>
+
+    <li><p><b><i>Password:</i></b> The column which are represents  password of the user.</br></p></li></ol>
+
+
+                    <li><b>Attributes of Product Table</b></li></br>
+
+    Here are the descriptions or purposes of the attributes/columns used in Product table:</br>
+
+
+<ol type="i"><li><p><b><i>Product_Id:</i></b> The column which are represents  id of product which is unique value called PRIMARY.  It is set to auto-increment (AUTO_INCREMENT).</br>
+AUTO_INCREMENT means that the database will automatically generate a unique ID for each new record, typically incrementing the previous value of Product table.</br></p></li>
+
+<li><p><b><i>Product_Name:</i></b> The column which are represents  the name of the product like Prinnter.</p></br></li>
+
+<li><p><b><i>Product_Description:</i></b> The column which are represents  the description or uses of the product.</br></p></li>
+
+<li><p><b><i>Product_Price:</i></b> The columns which are represents  the price of the product.</br></p></li></ol>
+
+
+                    <li><b>Attributes of Supplier Table</b></li></br>
+
+                    Here are the descriptions or purposes of the attributes/columns used in Supplier table:</br>
+
+
+
+<ol type="i"><li><p><b><i>Supplier_Id:</i></b> The column which are represents  id of  Supplier which is unique value called PRIMARY KEY. It is set to auto-increment (AUTO_INCREMENT).</br>
+AUTO_INCREMENT means that the database will automatically generate a unique ID for each new record, typically incrementing the previous value of Supplier table.</p></br></li>
+
+<li><p><b><i>Product_Id:</i></b> The column which are represents  id of product which  is references to the product  table value called FOREIGN KEY.  It is a column of product table  which has relationship between Supplier table.</p></br></li>
+
+<li><p><b><i>Supplier_Name:</i></b> The column which are represents  the name of theSupplier like ABC Company.</p></br></li>
+
+<li><p><b><i>Supplier_Address:</i></b> The column which are represents  Location or address of Supplier  where workplace or organization are  located.</p></br></li>
+
+
+<li><p><b><i>Supplier_Contact:</i></b> The column which are represents telephone number of Supplier.</p></br></li>
+
+<li><p><b><i>Gender:</i></b> The column which are represents gender of supplier like female and male.</p> </br></li></ol>
+
+
+                    <li><b>Attributes of Stock Transaction Table</b></li></br>
+
+                    Here are the descriptions or purposes of the attributes/columns used in Stock_Transaction table:</br>
+
+<ol type="i"><li><p><b><i>Stock_Transaction_Id:</i></b> The column which are represents  id of  Stock_Transaction  which is unique value called PRIMARY KEY.  It is set to auto-increment (AUTO_INCREMENT).</br>
+AUTO_INCREMENT means that the database will automatically generate a unique ID for each new record, typically incrementing the previous value of Stock_Transaction table.</p></br></li>
+
+
+<li><p><b><i>Product_Id:</i></b> The column which are represents  id of product which  is references to the product  table value called FOREIGN KEY.  It is a column of product table  which has relationship between Stock_Transaction table.</p></br></li>
+
+<li><p><b><i>Transaction_Type:</i></b> The column which are represents  the name of  the transaction per date or every day.</p></br></li> 
+
+<li><p><b><i>Quantity:</i></b> The column which are represents the quantity of product for being transaction, may be it can purchase goods which has 45kg or 45.55.</p></br></li>
+
+<li><p><b><i>Transaction_Date:</i></b> The column which are represents  the date of being transaction.</p></br></li></ol>
+
+
+                    <li><b>Attributes of Customer Table</b></li></br>
+
+                    Here are the descriptions or purposes of the attributes/columns used in Customer table:</br>
+
+
+<ol type="i"><li><p><b><i>Customer_Id:</i></b> The column which are represents  id of  Customers  which is unique value called PRIMARY KEY. It is set to auto-increment (AUTO_INCREMENT).</br>
+AUTO_INCREMENT means that the database will automatically generate a unique ID for each new record, typically incrementing the previous value of Customers  table.</p></br></li>
+
+
+<li><p><b><i>Product_Id:</i></b> The column which are represents  id of product which  is references to the product  table value called FOREIGN KEY.  It is a column of product table  which has relationship between Customers  table.</p></br></li>
+
+<li><p><b><i>Name:</i></b> The column which are represents  the name of  the customer.</p></br></li>
+
+
+<li><p><b>Email:</i></b> The column which are represents  the email of customer.</p></br></li>
+
+<li><p><b><i>Phone_Number:</i></b> The column which are represents telephone number of customer.</p></br></li>
+
+<li><p><b><i>Gender:</i></b> The column which are represents sex of customer like female and male.</p></br></li></ol> 
+
+
+
+                    <li><b>Attributes of Orders Table</b></li></ol></br>
+
+    Here are the descriptions or purposes of the attributes/columns used in Orders table:</br>
+
+
+<ol type="i"><li><p><b><i>Order_Id:</i></b> The column which are represents  id of  Customers  which is unique value called PRIMARY KEY. It is set to auto-increment (AUTO_INCREMENT).</br>
+AUTO_INCREMENT means that the database will automatically generate a unique ID for each new record, typically incrementing the previous value of Orders  table.</p></br></li>
+
+<li><p><b><i>Customer_Id:</i></b> The column which are represents  id of product which  is references to the Customers  table value called FOREIGN KEY.  It is a column of Customers table  which has relationship between Orders  table.</p></br></li>
+
+<li><p><b><i>Order_Date:</i></b> The column which are represents  the date of being orders of customer.</p></br></li>
+
+<li><p><b><i>Total_Amount:</i></b> The column which are represents  the  amount of money paid by customer about ordering.</p></br></li>
+
+<li><p><b><i>Order_Status:</i></b> The column which are represents  the status of orders, they can be pending,processing, shipped, etc.</p></br></li>
+ 
+
+
+
+        </ul>
+		<h2><u><li>JAVA PROGRAMMING</li></u></h2>
+		
+		<ul type="square"><h3><u><i><li>Description</li></i></u></h3>
+
+			  <b>Introduction</b><br>
+ <p>In this chapter I will be describing how powerful generalpurpose programming language was used to create the analyzed system. Under this chapter I will undergo full detail of how everything will function together with database that have been describe above and how it cope with full analyzed system.</p><br>
+ 
+	<b>Tools used to develop this system in java programming</b><br>
+
+<ol type="a"><li><p><b>Eclipse IDE:</b> an integrated development environment used in computer programming. It contains a base workspace and an extensible plug-in system for customizing the environment. It is the second-most-popular IDE for Java development, and was the most popular. </p><br></li>
+
+<li><p><b>JAR stands for Java Archive:</b>  It's a file format based on the popular ZIP file format and is used for aggregating many files into one. Although JAR can be used as a general archiving tool, the primary motivation for its development was so that Java applets and their requisite components. </p><br></li></ol>
+
+<img src="connector.png" width=1000 height=100><br><br>
+
+
+
+
+
+<p><b>MySQL Connectors:</b> MySQL provides standards-based drivers for JDBC, ODBC, and .Net enabling developers to build database applications in their language.</p><br>
+
+
+
+			              <h3><u><i><li>Forms and Images</li></i></u></h3>
+
+<ol type="I"><li><b><h4>Product Form</h4></b></br>
+<img src="product.png" width=900 height=300><br><br><br><br><br></li>
+
+<li><b><h4>Supplier Form</h4></b></br>
+<img src="suplierr.png" width=900 height=300><br><br><br><br><br></li>
+
+<li><b><h4>Stock Transaction Form</h4></b></br>
+<img src="stock transction.png" width=900 height=300><br><br><br><br><br></li>
+
+<li><b><h4>Customer Form</h4></b></br>
+<img src="customer.png" width=900 height=300><br><br><br><br><br>
+
+<li><b><h4>Order Form</h4></b></br>
+<img src="order.png" width=900 height=300><br><br><br><br><br>
+</li></ol>
+
+</ul>
+		
+	</ol>
+	<marquee><u><i><h2 style="color: white;">Prepared By</i></u>: IRADUKUNDA Jean Nepomuscene</h2></marquee>
+	</body>
+	</html>

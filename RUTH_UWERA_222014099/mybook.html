@@ -1,0 +1,206 @@
+<html>
+<head>
+	<title>My Book</title>
+</head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+<body bgcolor="green">
+    <p>
+    	<center>
+    	<ul style="list-style-type: none;  padding: 0;">
+        <li style="display: inline;  margin-right: 10px"><a href="./home.html" 
+
+        	style="padding: 10px;color: white;background-color: blue;text-decoration: none;margin-right: 15px;">HOME</a></li>
+        <li style="display: inline;  margin-right: 10px"><a href="./about.html" 
+
+        	style="padding: 10px;color: white;background-color: blue;text-decoration: none;margin-right: 15px;">ABOUT</a></li>
+        <li style="display: inline;  margin-right: 10px"><a href="./contact.html" 
+        	style="padding: 10px;color: white;background-color: blue;text-decoration: none;margin-right: 15px;">CONTACT</a></li>
+        <li style="display: inline;  margin-right: 10px"><a href="./services.html" 
+        	style="padding: 10px;color: white;background-color: blue;text-decoration: none;margin-right: 15px;">SERVICES</a></li>
+        <li style="display: inline;  margin-right: 10px"><a href="./form.html" 
+        	style="padding: 10px;color: white;background-color: blue;text-decoration: none;margin-right: 15px;">FORM</a></li>
+        
+        <li style="display: inline;  margin-right: 10px"><a href="./table.html" 
+            style="padding: 10px;color: white;background-color: blue;text-decoration: none;margin-right: 15px;">TABLE</a></li>
+        
+        <li style="display: inline;  margin-right: 10px"><a href="./mybook.html" 
+        	style="padding: 10px;color: white;background-color: blue;text-decoration: none;margin-right: 15px;">MYBOOK</a></li>
+    </ul></center>
+
+	</p>
+	<h1>ONLINE COAT AND PAINT SELLING</h1>
+	<ol><h2><u><li>DATABASE</li></u></h2>
+		<p>Database used in my project is called: <b>online_coat_and_paint_selling_system.</b></p>
+		<ul type="square"><h3><u><i><li>Tables Used</li></i></u></h3>
+
+			<ol><li><b>Admin Table</b></li>
+
+			<p>Admin table database structure This is table is table that will be only created by admin and will hold other system users apart from admin  will give them email and password that they will use to login and access the project or system, and also t used to register if she/he’s don’t have an account so once you must to create account in order to login and access or use the system.
+            Note: the created Admin will not have same ability and right in the system.</p></br>
+
+			<li><b>Product Table</b></li>
+
+			<p>insert into product(product_id,price, stock_quantity) values('','nanu','12.80','200'),('','matress','150000.00','35'),('','clothes','12.80','200'),('','chairs','80000.00','50');</p> </br>
+
+
+			<li><b>Payment Information Table</b></li>
+
+			<p>insert into payment_information(payment_id,order_id, total_amount,transaction_date)VALUES('',1,200000,'2022-01-03'),('',4,70000,'2024-12-05'),('',2,22200,2024-11-03),('',3,50000,'2024-05-07' );</p></br>
+
+			<li><b>Shipping Information Table</b></li>
+
+			<p>INSERT INTO shipping_information(shipping_id, order_id,	shipping_address, shipping_date)VALUES('',2,'kakiru','2023-08-03'),('',3,'kicukiro','2024-05-02'),('',4,'kabarore','2024-11-07'),('',1,'nyagatare','2022-08-01');</p></br>
+
+            <li><b>Customer Table</b></li>
+
+			<p>insert into customer(customer_id, first_name, last_name, email,phone,address) VALUES('','vianey','andrew','andrewviann@gmail.com','078222665','kageyo'),('','kangabe','alex','alexkg@gmail.com','078233443','kirehe');</p></br>
+
+			<li><b>Orders Table</b></li></ol>
+
+			<p>insert into Orders(order_id, customer_id, order_date)VALUES('',1,2022-01-03'),('',2,'2024-12-05'),('',2,2024-11-03),('',3,50000,'2024-05-07' ); </p></br>
+
+
+			              <h3><u><i><li>Attributes</li></i></u></h3>
+			       <ol type="i"><li><b>Attributes of Admin Table</b></li></br>
+
+    <ol type="a"><li><p><b><i>fname:</i></b> The columns which are represents first name of user.</br></p></li> 
+    <li><p><b><i>lname:</i></b> The columns which are represents last name of user.</br></p></li> 
+    <li><p><b><i>phone:</i></b> The column which are represents telephone number of user.</br></p></li>
+
+    <li><p><b><i>gender:</i></b> The column which are represents or store gender of user like female and male.</br></p></li>
+
+    <li><p><b><i>martial_status:</i></b> The column which are represents  martial status of user like single,married,divorced,…..</br></p></li> 
+
+    <li><p><b><i>DoB:</i></b> The column which are represents Date of Birth of user.</br></p></li>
+
+   <li><p><b><i>Email:</i></b> The column which are represents Email of given user.</br></p></li>
+
+    <li><p><b><i>Password:</i></b> The column which are represents  password of the user.</br></p></li></ol>
+
+
+                    <li><b>Attributes of Product Table</b></li></br>
+
+<ol type="a"><li><p><b><i>product_id:</i></b> The column which are represents  id of product which is unique value called PRIMARY.  It is set to auto-increment (AUTO_INCREMENT).</br>
+AUTO_INCREMENT means that the database will automatically generate a unique ID for each new record, typically incrementing the previous value of Product table.</br></p></li>
+
+<li><p><b><i>product_name:</i></b> The column which are represents  the name of the product like Prinnter.</p></br></li>
+
+<li><p><b><i>price:</i></b> The column which are represents  the price of the product.</br></p></li>
+
+<li><p><b><i>stock_quantity:</i></b> The columns which are represents  the quantity stock of the products.</br></p></li></ol>
+
+
+                    <li><b>Attributes of Payment Information Table</b></li></br>
+
+<ol type="a"><li><p><b><i>payment_id:</i></b> The column which are represents  id of  payment which is unique value called PRIMARY KEY. It is set to auto-increment (AUTO_INCREMENT).</br>
+AUTO_INCREMENT means that the database will automatically generate a unique ID for each new record, typically incrementing the previous value of payment table.</p></br></li>
+
+<li><p><b><i>order_id:</i></b> The column which are represents  id of product which  is references to the orders  table value called FOREIGN KEY.  It is a column of orders table  which has relationship between payment information table.</p></br></li>
+
+<li><p><b><i>total_amount:</i></b> The column which are represents  the amount of the payment.</p></br></li>
+
+<li><p><b><i>transaction_date:</i></b> The column which are represents  the date of payment amount of customer.</p></br></li>
+</ol>
+
+
+                    <li><b>Attributes of Shipping Information Table</b></li></br>
+
+<ol type="a"><li><p><b><i>shipping_id:</i></b> The column which are represents  id of  shipping_information  which is unique value called PRIMARY KEY.  It is set to auto-increment (AUTO_INCREMENT).</br>
+AUTO_INCREMENT means that the database will automatically generate a unique ID for each new record, typically incrementing the previous value of shipping_information table.</p></br></li>
+
+
+<li><p><b><i>order_id:</i></b> The column which are represents  id of product which  is references to the product  table value called FOREIGN KEY.  It is a column of orders table  which has relationship between shipping_information table.</p></br></li>
+
+<li><p><b><i>shipping_address:</i></b> The column which are represents  the address of the shipping information.</p></br></li> 
+
+<li><p><b><i>shipping_date:</i></b> The column which are represents  the date of being information shipped.</p></br></li></ol>
+
+
+                    <li><b>Attributes of Customer Table</b></li></br>
+
+<ol type="a"><li><p><b><i>customer_id:</i></b> The column which are represents  id of  Customer  which is unique value called PRIMARY KEY. It is set to auto-increment (AUTO_INCREMENT).</br>
+AUTO_INCREMENT means that the database will automatically generate a unique ID for each new record, typically incrementing the previous value of Customer  table.</p></br></li>
+
+
+<li><p><b><i>first_name:</i></b> The column which are represents  the first name of  the customer</p></br></li>
+
+<li><p><b><i>last_name:</i></b> The column which are represents  the last name of  the customer.</p></br></li>
+
+
+<li><p><b>email:</i></b> The column which are represents  the email of customer.</p></br></li>
+
+<li><p><b><i>phone:</i></b> The column which are represents telephone number of customer.</p></br></li>
+
+<li><p><b><i>address:</i></b> The column which are represents address of customer.</p></br></li></ol> 
+
+
+
+                    <li><b>Attributes of Orders Table</b></li></ol></br>
+
+<ol type="a"><li><p><b><i>order_id:</i></b> The column which are represents  id of  Customers  which is unique value called PRIMARY KEY. It is set to auto-increment (AUTO_INCREMENT).</br>
+AUTO_INCREMENT means that the database will automatically generate a unique ID for each new record, typically incrementing the previous value of Orders  table.</p></br></li>
+
+<li><p><b><i>customer_id:</i></b> The column which are represents  id of product which  is references to the Customers  table value called FOREIGN KEY.  It is a column of Customers table  which has relationship between Orders  table.</p></br></li>
+
+<li><p><b><i>order_date:</i></b> The column which are represents  the date of being orders of customer.</p></br></li>
+
+
+ 
+
+
+
+        </ul>
+		<h2><u><li>JAVA PROGRAMMING</li></u></h2>
+		
+		<ul type="square"><h3><u><i><li>Description</li></i></u></h3>
+
+			  <b>Introduction</b><br>
+ <p>In this chapter I will be describing how powerful generalpurpose programming language was used to create the analyzed system. Under this chapter I will undergo full detail of how everything will function together with database that have been describe above and how it cope with full analyzed system.</p><br>
+ 
+	<b>Tools used to develop this system in java programming</b><br>
+
+<ol type="a"><li><p><b>Eclipse IDE:</b> an integrated development environment used in computer programming. It contains a base workspace and an extensible plug-in system for customizing the environment. It is the second-most-popular IDE for Java development, and was the most popular. </p><br></li>
+
+<li><p><b>JAR stands for Java Archive:</b>  It's a file format based on the popular ZIP file format and is used for aggregating many files into one. Although JAR can be used as a general archiving tool, the primary motivation for its development was so that Java applets and their requisite components. </p><br></li></ol>
+
+
+<p><b>MySQL Connectors:</b> MySQL provides standards-based drivers for JDBC, ODBC, and .Net enabling developers to build database applications in their language.</p><br>
+
+
+
+			              <h3><u><i><li>Forms and Images</li></i></u></h3>
+
+<ol type="1"><li><b><h4>Product Form</h4></b></br>
+<img src="product.png" width=900 height=300><br><br><br><br><br></li>
+
+<li><b><h4>Payment Form</h4></b></br>
+<img src="payment.png" width=900 height=300><br><br><br><br><br></li>
+
+<li><b><h4>Shipping Form</h4></b></br>
+<img src="shipping.png" width=900 height=300><br><br><br><br><br></li>
+
+<li><b><h4>Customer Form</h4></b></br>
+<img src="customer.png" width=900 height=300><br><br><br><br><br>
+
+<li><b><h4>Order Form</h4></b></br>
+<img src="order.png" width=900 height=300><br><br><br><br><br>
+</li>
+ 
+<li><b><h4>Registration Form</h4></b></br>
+<img src="regsrtn.png" width=900 height=300><br><br><br><br><br></li>
+
+<li><b><h4>Login Form</h4></b></br>
+<img src="login.png" width=900 height=300><br><br><br><br><br></li>
+
+
+</ol>
+
+</ul>
+		
+	</ol>
+	<marquee><u><i><h2 style="color: gray;">Prepared By</i></u>: UWERA Ruth</h2></marquee>
+	</body>
+	</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            background-color: orange;
+            color: green;
+            font: normal 16px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+	  <p>
+        <center>
+        <ul style="list-style-type: none;  padding: 0;">
+        <li style="display: inline;  margin-right: 10px"><a href="./home.html" 
+
+            style="padding: 10px;color: white;background-color: blue;text-decoration: none;margin-right: 15px;">HOME</a></li>
+        <li style="display: inline;  margin-right: 10px"><a href="./about.html" 
+
+            style="padding: 10px;color: white;background-color: blue;text-decoration: none;margin-right: 15px;">ABOUT</a></li>
+        <li style="display: inline;  margin-right: 10px"><a href="./contact.html" 
+            style="padding: 10px;color: white;background-color: blue;text-decoration: none;margin-right: 15px;">CONTACT</a></li>
+        <li style="display: inline;  margin-right: 10px"><a href="./services.html" 
+            style="padding: 10px;color: white;background-color: blue;text-decoration: none;margin-right: 15px;">SERVICES</a></li>
+        <li style="display: inline;  margin-right: 10px"><a href="./form.html" 
+            style="padding: 10px;color: white;background-color: blue;text-decoration: none;margin-right: 15px;">FORM</a></li>
+        
+        <li style="display: inline;  margin-right: 10px"><a href="./table.html" 
+            style="padding: 10px;color: white;background-color: blue;text-decoration: none;margin-right: 15px;">TABLE</a></li>
+        
+        <li style="display: inline;  margin-right: 10px"><a href="./mybook.html" 
+            style="padding: 10px;color: white;background-color: blue;text-decoration: none;margin-right: 15px;">MYBOOK</a></li>
+    </ul></center>
+    </p>
+    
+    <hr><center>
+    <h2 style="color: #877654;"><i><u>Form Of Registration</u></i></h2>
+    
+        <form action="#" method="POST">
+            <label for="stid"><b>StudentID:</b></label>
+            <input type="number" name="stid" id="stid" required><br><br>
+
+            <label for="fname"><b>First Name:</b></label>
+            <input type="text" name="fname" id="fname" required><br><br>
+
+            <label for="lname"><b>Last Name:</b></label>
+            <input type="text" name="lname" id="lname" required><br><br>
+
+            <label for="date"><b>DOB:</b></label>
+            <input type="date" name="date" id="date" required><br><br>
+
+            <label for="age"><b>Age:</b></label>
+            <input type="number" name="age" id="age" required><br><br>
+
+
+            <label for="eml"><b>Email:</b></label>
+            <input type="email" name="em" id="em" required><br><br>
+
+
+            <label for="colg"><b>College:</b></label>
+            <select name="colg" id="colg" required>
+                <option>CBE</option>
+                <option>CAS</option>
+                <option>CST</option>
+                <option>CMHS</option>
+                <option>CE</option>
+            </select><br><br>
+
+            <label><b>Gender:</b></label>
+            <input type="radio" name="gend" value="male" checked>Male
+            <input type="radio" name="gend" value="female">Female<br><br>
+
+            <input type="submit" name="sbt" value="SUBMIT">
+            <input type="reset" name="cnl" value="CANCEL"><br>
+        </form>
+    </center>
+</body>
+</html>
